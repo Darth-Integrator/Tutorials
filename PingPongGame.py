@@ -1,4 +1,6 @@
 import turtle as t
+import os
+
 playerAscore=0
 playerBscore=0
  
@@ -97,9 +99,7 @@ while True:
         pen.clear()
         pen.write("Player A: {}                    Player B: {} ".format(player_a_score,player_b_score),align="center",font=('Monaco',24,"normal"))
         os.system("afplay wallhit.wav&")
- 
- 
- 
+
     if(ball.xcor()) < -390: # Left width paddle Border
         ball.goto(0,0)
         ball_dx = ball_dx * -1
